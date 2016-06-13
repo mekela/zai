@@ -73,6 +73,17 @@ $medium:  'Clear Sans Medium';
 $left: left;
 $right: right;
 
+@mixin link_default(){
+  color: #0033ff;
+  &:hover{
+    text-decoration: underline;
+    color: #0033ff;
+  }
+  &:active, &:visited{
+    color: #8a00ff;
+    text-decoration: underline;
+  }
+}
 
 //mirror flip
 @mixin mirror_flip(){
