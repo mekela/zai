@@ -574,6 +574,48 @@ section{
 		max-width: 100%;
 	}
 }
+/*-------------------------------         modal          -----------------------------------*/
+#modal-window{
+	position: relative;
+	background: url('../img/outcome-bg.jpg');
+	background-size: cover;
+	display: none;
+	width: 580px;
+	color: #000;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	padding: 15px;
+	border: 1px solid #f8b600;
+	border-radius: 8px;
+	form{
+		width: 380px;
+		margin: 30px auto 0;
+	}
+	.form-control{
+		background: transparent;
+		width: 100%;
+		height: 55px;
+		color: #000;
+		font-size: 20px;
+		font-weight: 300;
+		border: 1px solid #000;
+		border-radius: 23px;
+		padding: 0 25px;
+	}
+	/* all */
+	::-webkit-input-placeholder { color: #000; font-size: inherit;}
+	::-moz-placeholder { color: #000; font-size: inherit;} /* firefox 19+ */
+	:-ms-input-placeholder { color: #000; font-size: inherit;} /* ie */
+	input:-moz-placeholder { color: #000; font-size: inherit;}
+}
+body .fancybox-close{
+	background: url('../img/close.png');
+	width: 16px;
+	height: 16px;
+	top: -16px;
+	right: -16px;
+}
 
 /*-------------------------------         media          -----------------------------------*/
 @media only screen and (max-width: 1199px){
