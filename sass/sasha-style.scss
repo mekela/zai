@@ -1,3 +1,15 @@
+a{
+	color: #03f;
+	&:hover{
+		color: #03f;
+	}
+	&:active{
+		color: #8a00ff;
+	}
+	&:focus{
+		color: #8a00ff;
+	}
+}
 /*-------------------------------         section          -----------------------------------*/
 section{
 	h2{
@@ -29,6 +41,141 @@ section{
 }
 .button{
 	max-width: 100%;
+}
+/*-------------------------------         outcome          -----------------------------------*/
+.outcome{
+	position: relative;
+	background: url('../img/outcome-bg.jpg') center bottom no-repeat;
+	background-size: cover;
+	padding: 60px 0 20px;
+	margin-bottom: 50px;
+	h2{
+		color: #000;
+		&:before, &:after{
+			background: #544a17;
+		}
+	}
+}
+	.outcome-text{
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 40px;
+	}
+	.outcome-inner{
+
+	}
+		.outcome-box{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 180px;
+			height: 180px;
+			font-size: 18px;
+			line-height: 25px;
+			border-radius: 50%;
+			border: 1px solid #544a17;
+			margin: 0 60px 30px;
+			&:before{
+				content: '';
+				position: absolute;
+				left: -3px;
+				top: -3px;
+				width: 184px;
+				height: 184px;
+				border-radius: 50%;
+				border-style: solid;
+				border-width: 5px;
+				border-color: #544a17 #544a17 #544a17 transparent;
+			}
+			&:nth-child(1){
+				&:before{
+					-webkit-transform: rotate(45deg);
+					-moz-transform: rotate(45deg);
+					-o-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+			}
+			&:nth-child(2){
+				&:before{
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					transform: rotate(90deg);
+				}
+			}
+			&:nth-child(3){
+				&:before{
+					-webkit-transform: rotate(135deg);
+					-moz-transform: rotate(135deg);
+					-o-transform: rotate(135deg);
+					-ms-transform: rotate(135deg);
+					transform: rotate(135deg);
+				}
+			}
+		}
+			.outcome-title{
+				display: table-cell;
+				vertical-align: middle;
+				width: 180px;
+				height: 180px;
+				padding: 10px;
+			}
+/*-------------------------------         guarantee          -----------------------------------*/
+.benefits{
+	position: relative;
+	margin-bottom: 50px;
+	table{
+		border-collapse: separate;
+		border-spacing: 15px 0;
+		thead{
+			tr{
+				td{
+					background: #f8b600;
+					font-size: 20px;
+				}
+			}
+		}
+		tbody{
+			tr{
+				&:nth-child(even){
+					td{
+						background: #f9f9f9;
+					}
+				}
+				&:nth-child(odd){
+					td{
+						background: #fff;
+					}
+				}
+			}
+		}
+		tr{
+			&:last-child{
+				td{
+					border-width: 0 2px 2px 2px;
+				}
+			}
+			td{
+				height: 60px;
+				vertical-align: middle;
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 20px;
+				border-style: solid;
+				border-color: #f8b600;
+				border-width: 0 2px;
+				padding: 5px 20px;
+				box-sizing: border-box;
+				&:first-child{
+					width: 25%;
+					font-size: 20px;
+					font-weight: normal;
+				}
+			}
+		}
+	}
 }
 /*-------------------------------         guarantee          -----------------------------------*/
 .guarantee{
@@ -215,6 +362,7 @@ section{
 		text-align: left;
 		text-decoration: none;
 		border: 1px dashed #f8b600;
+		-moz-border-radius: 20px;
 		border-radius: 20px;
 		padding: 10px 30px;
 		margin-top: 20px;
@@ -239,10 +387,6 @@ section{
 			.caret{
 				border-top-color: #f8b600;
 			}
-		}
-		&:focus, &:visited{
-			color: #000;
-			text-decoration: none;
 		}
 		.caret{
 			position: absolute;
@@ -351,11 +495,17 @@ section{
 
 /*-------------------------------         media          -----------------------------------*/
 @media only screen and (max-width: 1199px){
+	.outcome-box{
+		margin: 0 40px 30px;
+	}
 	.guarantee-box{
 		padding: 90px 45px 0;
 	}
 }
 @media only screen and (max-width: 991px) {
+	.outcome-box{
+		margin: 0 20px 30px;
+	}
 	.guarantee-bottom{
 		display: block;
 	}
@@ -391,6 +541,16 @@ section{
 		text-align: center;
 		.text-right{
 			text-align: center;
+		}
+	}
+}
+@media only screen and (max-width: 767px){
+	.outcome-box{
+		margin: 0 15% 30px;
+	}
+	.benefits{
+		.table-responsive{
+			border: 0;
 		}
 	}
 }
