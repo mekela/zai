@@ -1,1 +1,155 @@
-section h2{position:relative;color:#000;font-size:36px;font-weight:300;padding-left:30px;margin-bottom:50px}section h2:before{content:'';position:absolute;background:#f8b600;left:0;top:15px;width:10px;height:10px}section h2:after{content:'';position:absolute;background:#f8b600;left:0;bottom:-10px;width:380px;height:1px}.documents{position:relative;margin-bottom:50px}.document-img{position:relative;display:inline-block;vertical-align:top;line-height:0;border:10px solid #f8b600}.document-img img{max-width:100%;box-shadow:0 3px 5px rgba(0,0,0,0.35)}.document-text{position:relative;font-size:14px;font-weight:300;border:1px dashed #f8b600;border-radius:20px;padding:10px 30px;margin-top:20px;cursor:pointer}.document-text .caret{position:absolute;top:16px;right:20px;border-width:8px 6px;border-top-color:#f8b600}.stakeholder{position:relative}.stakeholder-text{font-size:36px}.stakeholder-text .text-warning{color:#f8b600}.stakeholder-text img{max-width:100%}#map{position:relative;height:500px}.footer{background:#d8b95b url("../img/footer-bg.jpg") center bottom no-repeat;font-size:20px;font-weight:300;padding:60px 0 15px}.footer .phone,.footer .mail{color:#fff;font-size:24px;text-decoration:none}.footer .phone img,.footer .mail img{position:relative;top:10px;padding-right:10px}.footer-top{padding-bottom:60px}.footer-left{border-right:1px solid #654215}.footer-right{font-size:16px}.footer-right h2{position:relative;color:#000;font-size:36px;font-weight:300;margin-bottom:20px}.footer-bottom{border-top:1px solid #fff;padding-top:15px}@media only screen and (max-width: 991px){.stakeholder{padding-bottom:50px}.footer-left{border:0;margin-bottom:30px}.footer-center{margin-bottom:30px}.footer-bottom{text-align:center}.footer-bottom .text-right{text-align:center}}
+/*-------------------------------         section          -----------------------------------*/
+section h2 {
+  position: relative;
+  color: #000;
+  font-size: 36px;
+  font-weight: 300;
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
+
+section h2:before {
+  content: '';
+  position: absolute;
+  background: #f8b600;
+  left: 0;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+}
+
+section h2:after {
+  content: '';
+  position: absolute;
+  background: #f8b600;
+  left: 0;
+  bottom: -10px;
+  width: 380px;
+  height: 1px;
+}
+
+/*-------------------------------         stakeholder          -----------------------------------*/
+.documents {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.document-img {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 0;
+  border: 10px solid #f8b600;
+}
+
+.document-img img {
+  max-width: 100%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
+}
+
+.document-text {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px dashed #f8b600;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.document-text .caret {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  border-width: 8px 6px;
+  border-top-color: #f8b600;
+}
+
+/*-------------------------------         stakeholder          -----------------------------------*/
+.stakeholder {
+  position: relative;
+}
+
+.stakeholder-text {
+  font-size: 36px;
+}
+
+.stakeholder-text .text-warning {
+  color: #f8b600;
+}
+
+.stakeholder-text img {
+  max-width: 100%;
+}
+
+/*-------------------------------         map          -----------------------------------*/
+#map {
+  position: relative;
+  height: 500px;
+}
+
+/*-------------------------------         footer          -----------------------------------*/
+.footer {
+  background: #d8b95b url("../img/footer-bg.jpg") center bottom no-repeat;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 60px 0 15px;
+}
+
+.footer .phone, .footer .mail {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer .phone img, .footer .mail img {
+  position: relative;
+  top: 10px;
+  padding-right: 10px;
+}
+
+.footer-top {
+  padding-bottom: 60px;
+}
+
+.footer-left {
+  border-right: 1px solid #654215;
+}
+
+.footer-right {
+  font-size: 16px;
+}
+
+.footer-right h2 {
+  position: relative;
+  color: #000;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #fff;
+  padding-top: 15px;
+}
+
+/*-------------------------------         media          -----------------------------------*/
+@media only screen and (max-width: 991px) {
+  .stakeholder {
+    padding-bottom: 50px;
+  }
+  .footer-left {
+    border: 0;
+    margin-bottom: 30px;
+  }
+  .footer-center {
+    margin-bottom: 30px;
+  }
+  .footer-bottom {
+    text-align: center;
+  }
+  .footer-bottom .text-right {
+    text-align: center;
+  }
+}

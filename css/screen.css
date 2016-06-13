@@ -435,6 +435,152 @@ textarea {
   padding: 15px 0;
 }
 
+.how_wrap .document-text {
+  width: 175px;
+  padding: 10px 15px;
+}
+
+.step_wrap {
+  height: 520px;
+  margin-bottom: 50px;
+  background: url(../img/step_bg.jpg) no-repeat top center;
+}
+
+.step_wrap .title {
+  margin-top: 50px;
+}
+
+.step_wrap .title:before {
+  background: #544a17;
+}
+
+.step_wrap .title:after {
+  background: #544a17;
+}
+
+.step_wrap .col-md-4:nth-child(2) .step {
+  background: #fff url(../img/02.jpg) no-repeat bottom right;
+}
+
+.step_wrap .col-md-4:nth-child(3) .step {
+  background: #fff url(../img/03.jpg) no-repeat bottom right -2px;
+}
+
+.step {
+  height: 300px;
+  box-sizing: border-box;
+  padding: 30px 14px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(9, 12, 18, 0.35);
+  background: #fff url(../img/01.jpg) no-repeat bottom right -2px;
+}
+
+.step h5 {
+  font-size: 20px;
+  color: #000;
+  padding-bottom: 14px;
+}
+
+.step h5:after {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 200px;
+  background: #f8b600;
+  margin-top: 13px;
+}
+
+.step p {
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 15px;
+  width: 270px;
+}
+
+.step p a {
+  color: #0033ff;
+}
+
+.step p a:hover {
+  text-decoration: underline;
+  color: #0033ff;
+}
+
+.step p a:active, .step p a:visited {
+  color: #8a00ff;
+  text-decoration: underline;
+}
+
+.step strong {
+  display: block;
+  font-size: 24px;
+  color: #33cc33;
+  font-weight: 500;
+}
+
+.result_wrap .title {
+  margin-bottom: 0;
+}
+
+.result_block {
+  background: url(../img/iMac.png) no-repeat bottom right;
+  padding-bottom: 155px;
+  padding-top: 35px;
+}
+
+.result_block h5 {
+  font-size: 20px;
+  color: #000;
+  padding-left: 35px;
+  margin-bottom: 11px;
+  position: relative;
+}
+
+.result_block h5:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: #33cc33;
+}
+
+.result_block ol {
+  padding-left: 35px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 17px;
+  list-style-type: decimal;
+}
+
+.result_block ol li {
+  padding-bottom: 2px;
+}
+
+.result_block ol li em {
+  display: block;
+  padding: 13px 0 0 20px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.result_block h6 {
+  font-size: 20px;
+  padding: 0 0  10px 35px;
+}
+
+.result_block p {
+  padding-left: 35px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.result_block .document-text {
+  width: 380px;
+  font-size: 20px;
+}
+
 /*----------end main----------*/
 /*----------footer----------*/
 .footer {
