@@ -41,6 +41,10 @@ section{
 }
 .button{
 	max-width: 100%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 /*-------------------------------         services          -----------------------------------*/
 .services{
@@ -441,6 +445,7 @@ section{
 		color: #000;
 		font-size: 14px;
 		font-weight: 300;
+		line-height: 1;
 		text-align: left;
 		text-decoration: none;
 		border: 1px dashed #f8b600;
@@ -600,8 +605,15 @@ section{
 		font-size: 20px;
 		font-weight: 300;
 		border: 1px solid #000;
-		border-radius: 23px;
+		border-radius: 30px;
 		padding: 0 25px;
+		&:hover{
+			border-color: #33cc33;
+		}
+		&:focus{
+			border-color: #000;
+			box-shadow: none;
+		}
 	}
 	/* all */
 	::-webkit-input-placeholder { color: #000; font-size: inherit;}
@@ -616,9 +628,33 @@ body .fancybox-close{
 	top: -16px;
 	right: -16px;
 }
+body .fancybox-skin{
+	border-radius: 8px;
+}
 
 /*-------------------------------         media          -----------------------------------*/
 @media only screen and (max-width: 1199px){
+	.business{
+		.row{
+			.business_block{
+				height: 670px;
+			}
+		}
+	}
+	.finances_block{
+		dl{
+			left: 380px;
+			&:nth-child(2){
+				left: 580px;
+			}
+			&:nth-child(3){
+				left: 380px;
+			}
+			&:nth-child(4){
+				left: 180px;
+			}
+		}
+	}
 	.outcome-box{
 		margin: 0 40px 30px;
 	}
@@ -627,6 +663,46 @@ body .fancybox-close{
 	}
 }
 @media only screen and (max-width: 991px) {
+	.header{
+		text-align: center;
+		.text_right{
+			text-align: center !important;
+		}
+	}
+	.business{
+		.row{
+			.business_block{
+				height: auto;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.finances_block{
+		dl{
+			left: 270px;
+			&:nth-child(2){
+				left: 470px;
+			}
+			&:nth-child(3){
+				left: 270px;
+			}
+			&:nth-child(4){
+				left: 70px;
+			}
+		}
+	}
+	.how{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.how_wrap{
+		p{
+			width: auto;
+		}
+	}
+	.step{
+		height: auto;
+	}
 	.outcome-box{
 		margin: 0 20px 30px;
 	}
@@ -667,8 +743,80 @@ body .fancybox-close{
 			text-align: center;
 		}
 	}
+	#top{
+		width: 60px;
+		height: 60px;
+	}
 }
 @media only screen and (max-width: 767px){
+	.header{
+		height: auto;
+		background-size: cover;
+		padding-bottom: 50px;
+		.text_right{
+			a{
+				display: inline-block;
+			}
+		}
+	}
+	.slogan{
+		h1{
+			font-size: 30px;
+			line-height: 38px;
+		}
+		h2{
+			font-size: 28px;
+		}
+	}
+	.finances{
+		background-size: cover;
+	}
+	.finances_block{
+		background: none;
+		height: auto;
+		counter-reset: count;
+		dl{
+			position: relative;
+			background: #fff;
+			left: auto;
+			top: auto;
+			width: 220px;
+			height: 220px;
+			border: 1px solid #000;
+			border-radius: 50%;
+			padding: 35px 20px;
+			margin: 0 auto 30px;
+			box-sizing: border-box;
+			counter-increment: count;
+			&:nth-child(2){
+				left: auto;
+				top: auto;
+			}
+			&:nth-child(3){
+				left: auto;
+				top: auto;
+			}
+			&:nth-child(4){
+				left: auto;
+				top: auto;
+			}
+			&:before{
+				content: counter(count);
+				position: absolute;
+				left: 50%;
+				bottom: 15px;
+				width: 30px;
+				height: 30px;
+				color: #f8b600;
+				font-size: 18px;
+				font-weight: 300;
+				line-height: 30px;
+				border: 1px solid #f8b600;
+				border-radius: 50%;
+				margin-left: -15px;
+			}
+		}
+	}
 	.outcome-box{
 		margin: 0 15% 30px;
 	}
@@ -676,5 +824,42 @@ body .fancybox-close{
 		.table-responsive{
 			border: 0;
 		}
+	}
+	.services-box{
+		height: 500px;
+		&:hover{
+			.services-body{
+				top: 100px;
+			}
+		}
+	}
+	.services-body{
+		top: 140px;
+	}
+	.button{
+		font-size: 26px;
+	}
+	.button-green{
+		font-size: 18px;
+		.caret{
+			margin-left: 10px;
+		}
+	}
+	#modal-window{
+		width: 300px;
+		form{
+			width: auto;
+		}
+		.button{
+			font-size: 24px;
+		}
+	}
+	#top{
+		width: 50px;
+		height: 50px;
+	}
+	body .fancybox-close{
+		right: 5px;
+		top: 5px;
 	}
 }

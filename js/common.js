@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	//fancybox
 	$('.fancybox').fancybox({
+		margin: 10,
 		helpers: {
 			overlay: {
 				locked: false

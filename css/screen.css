@@ -280,6 +280,7 @@ textarea {
   padding-top: 50px;
   font-size: 20px;
   font-weight: 300;
+  text-align: left;
 }
 
 .slogan h1 {
@@ -317,6 +318,7 @@ textarea {
   box-shadow: 0 3px 5px rgba(9, 12, 18, 0.35);
   background: #fff;
   height: 640px;
+  text-align: center;
 }
 
 .business .row .business_block img {
@@ -324,6 +326,7 @@ textarea {
 }
 
 .business .row .business_block dl {
+  text-align: left;
   padding: 13px;
   padding-top: 0;
 }
@@ -352,6 +355,7 @@ textarea {
 
 .title {
   font-size: 36px;
+  font-weight: 300;
   color: #000;
   margin-bottom: 35px;
   padding-left: 30px;
@@ -380,7 +384,7 @@ textarea {
 }
 
 .finances {
-  background: url(../img/map_top.png) no-repeat left bottom;
+  background: url(../img/map_top.png) no-repeat center bottom;
   margin-bottom: 55px;
 }
 
@@ -441,9 +445,11 @@ textarea {
 }
 
 .step_wrap {
-  height: 520px;
+  position: relative;
   margin-bottom: 50px;
   background: url(../img/step_bg.jpg) no-repeat top center;
+  background-size: cover;
+  padding-bottom: 20px;
 }
 
 .step_wrap .title {
@@ -470,6 +476,7 @@ textarea {
   height: 300px;
   box-sizing: border-box;
   padding: 30px 14px;
+  margin-bottom: 30px;
   background-color: #fff;
   box-shadow: 0 3px 5px rgba(9, 12, 18, 0.35);
   background: #fff url(../img/01.jpg) no-repeat bottom right -2px;
@@ -523,8 +530,6 @@ textarea {
 }
 
 .result_block {
-  background: url(../img/iMac.png) no-repeat bottom right;
-  padding-bottom: 155px;
   padding-top: 35px;
 }
 
@@ -579,6 +584,14 @@ textarea {
 .result_block .document-text {
   width: 380px;
   font-size: 20px;
+}
+
+.result_block .a-download {
+  margin-bottom: 20px;
+}
+
+.result_block img {
+  max-width: 100%;
 }
 
 /*----------end main----------*/
